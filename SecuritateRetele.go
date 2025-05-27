@@ -43,6 +43,8 @@ func main() {
 	}
 	cert := tlsConnState.PeerCertificates[0]
 
+	fmt.Printf("Certificatul este valabil pana la: %s\n", cert.NotAfter.Format("02 Jan 2006 15:04:05 "))
+
 	err = verifyCertificate(cert, hostname)
 	if err != nil {
 		fmt.Printf("Site-ul este nesigur. Posibil un atac 'Man in the middle'!:\n %v\n", err)
