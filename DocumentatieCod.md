@@ -43,7 +43,7 @@ Acest program Go verifică validitatea certificatului TLS al unui site specifica
   go run program.go example.com
         > unde example.com este domeniul căruia îi verifici certificatul TLS.
 
-  ##Exemple de output
+  ## Exemple de output
   Dacă certificatul este valid și corespunde domeniului:
         > Certificatul este valabil pana la: 10 Dec 2025 23:59:59
           Site-ul este sigur!
